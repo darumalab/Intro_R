@@ -27,3 +27,4 @@ load("ファイル名.RData")
 rm(x) #xを削除
 rm(x, y) #x,y,mynameを削除
 rm(list = objects()) #全て削除
+
