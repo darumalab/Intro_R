@@ -14,15 +14,9 @@ m1 <- matrix(1:10, nrow = 2)
 m1
 m2 <- matrix(1:10, nrow = 2, byrow = TRUE)
 m2
-m3 <- matrix(1:12,
-             nrow = 3,
-             ncol = 4,
-             byrow = TRUE)
+m3 <- matrix(1:12,　nrow = 3,　ncol = 4,　byrow = TRUE)
 m3
-m4 <- matrix(c(1, 0, 0, 1),
-             nrow = 2,
-             ncol = 2,
-             byrow = TRUE)
+m4 <- matrix(c(1, 0, 0, 1),　 nrow = 2,　ncol = 2,　byrow = TRUE)
 m4
 
 ## 索引: オブジェクト名[row,column]
@@ -41,29 +35,24 @@ m3[3, 4] <- 0
 m3
 
 ## 名称を付ける
-m5 <- matrix(1:9,
-             nrow = 3,
-             ncol = 3,
-             byrow = TRUE)
-rownames(m5) <- c("1st", "2nd", "3rd")
-colnames(m5) <- c("first", "second", "third")
+m5 <- matrix(1:4,　nrow = 2,　ncol = 2,　byrow = TRUE)
+m5
+rownames(m5) <- c("1st", "2nd")
+colnames(m5) <- c("first", "second")
 m5
 
-rownames(m5) <- letters[1:3]　#a,b,c,...
-colnames(m5) <- LETTERS[1:3]  #A,B,C,...
+rownames(m5) <- letters[1:2]　#a,b,c,...
+colnames(m5) <- LETTERS[1:2]  #A,B,C,...
 m5
 
 ## 演算 pt1
-m5 + 3
-m5 - 3
-m5 / 3
-m5 * 3
+m5 + 2
+m5 - 2
+m5 / 2
+m5 * 2
 
 ## 演算 pt2
-m6 <- matrix(1:9,
-             nrow = 3,
-             ncol = 3,
-             byrow = TRUE)
+m6 <- matrix(c(2,3,4,5), nrow = 2, ncol = 2)
 m5
 m6
 m5 + m6
@@ -90,4 +79,3 @@ m6 %*% solve(m6) #単位行列
 
 ## 行列式
 det(m6)
-
