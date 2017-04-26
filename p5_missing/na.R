@@ -22,3 +22,4 @@ which(is.na(logi))
 
 ## ベクトルからNAを取り除く
 num <- num[!is.na(num)]
+
