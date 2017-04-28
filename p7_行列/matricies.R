@@ -12,6 +12,13 @@
 ## 行列
 m1 <- matrix(1:10, nrow = 2)
 m1
+
+## チェック
+length(m1)  #行列の要素の数を調べる
+nrow(m1)  #行
+ncol(m1)  #列
+dim(m1)  #nxm
+
 m2 <- matrix(1:10, nrow = 2, byrow = TRUE)
 m2
 m3 <- matrix(1:12,　nrow = 3,　ncol = 4,　byrow = TRUE)
